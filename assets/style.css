@@ -87,7 +87,58 @@ nav ul li a {
 .service-box h3 {
     margin: 10px 0;
 }
+/* Contact Form Section */
+.contact-form-section {
+    padding: 50px 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.contact-form-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form-section input, .contact-form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form-section button {
+    padding: 12px 25px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-section button:hover {
+    background-color: #ffcc00;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.contact-info p {
+    font-size: 16px;
+}
 /* Footer */
 footer {
     background: #003366;
