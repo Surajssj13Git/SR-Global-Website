@@ -1,36 +1,97 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f8f9fa;
 }
-header {
+
+/* Navigation Bar */
+nav {
     background: #003366;
     color: white;
-    padding: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
 }
 nav ul {
     list-style: none;
-    background: #0077b6;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
-section {
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?business,technology') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 48px;
+}
+.hero p {
+    font-size: 20px;
+}
+.cta-button {
+    background: #ffcc00;
+    color: black;
+    padding: 12px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Services Preview */
+.services-preview {
+    padding: 50px 20px;
+}
+.services-preview h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.service-box {
+    background: white;
     padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
+.service-box i {
+    font-size: 40px;
+    color: #003366;
+}
+.service-box h3 {
+    margin: 10px 0;
+}
+
+/* Footer */
 footer {
     background: #003366;
     color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
 }
