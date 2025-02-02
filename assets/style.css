@@ -1,3 +1,28 @@
+/* Ensure each page fits the full height of the screen */
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Make the main container fit exactly within the viewport */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+    text-align: center; /* Ensures text is centered */
+}
+
+/* Ensure images and sections do not overflow */
+img, video, iframe {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures images/videos scale properly */
+}
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -5,6 +30,8 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f8f9fa;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
 }
 
 /* Navigation Bar */
