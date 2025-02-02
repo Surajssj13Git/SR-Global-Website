@@ -19,18 +19,10 @@ body {
     padding: 0 15px; /* Ensures content has space on both sides */
     overflow: hidden;
 }
-/* Make sure all elements fit within the screen */
-img, video, iframe {
-    max-width: 100%;
-    height: auto;
-}
 /* Responsive layout for small screens */
 @media (max-width: 768px) {
     .container {
         padding: 10px; /* Reduce padding on small screens */
-    };
-    .body {
-        overflow-x:hidden;
     }
 }
 
@@ -63,7 +55,7 @@ nav ul {
 
 }
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 nav ul li a {
     color: white;
