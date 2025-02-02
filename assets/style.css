@@ -4,7 +4,29 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa;  width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents width issues */
+}
+.container {
+    max-width: 100%;
+    padding: 0 15px; /* Ensures content has space on both sides */
+}
+/* Make sure all elements fit within the screen */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on small screens */
+    };
 }
 
 /* Navigation Bar */
@@ -15,6 +37,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap; /* Ensures menu items wrap on small screens */
+    width: 100%;
+
 }
 nav .logo {
     font-size: 24px;
@@ -26,9 +52,13 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 nav ul li {
-    margin: 0 15px;
+    margin: 5px;
 }
 nav ul li a {
     color: white;
@@ -139,6 +169,7 @@ nav ul li a {
 .contact-info p {
     font-size: 16px;
 }
+
 /* Footer */
 footer {
     background: #003366;
