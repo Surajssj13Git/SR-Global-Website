@@ -36,6 +36,9 @@ img, video, iframe {
     .container {
         padding: 10px; /* Reduce padding on small screens */
     };
+    .body {
+        overflow-x:hidden;
+    }
 }
 
 /* Navigation Bar */
