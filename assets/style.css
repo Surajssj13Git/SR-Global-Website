@@ -1,10 +1,16 @@
 /* General Styles */
+html {
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f9fa;  width: 100%;
+    background-color: #f8f9fa;  
+    width: 100%;
     overflow-x: hidden; /* Prevents horizontal scrolling */
 
 }
@@ -12,10 +18,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Prevents width issues */
+    max-width: 100%;
+
 }
 .container {
     max-width: 100%;
     padding: 0 15px; /* Ensures content has space on both sides */
+    overflow: hidden;
 }
 /* Make sure all elements fit within the screen */
 img, video, iframe {
