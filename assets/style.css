@@ -6,7 +6,21 @@ body {
     text-align: center;
     background-color: #f8f9fa;
 }
+.logo {
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: left; /* or center */
+}
 
+.logo-top {
+    font-size: 28px; /* Bigger for top */
+    color: #000; /* Change color if you want */
+}
+
+.logo-bottom {
+    font-size: 18px; /* Smaller for bottom */
+    color: #555; /* Slightly lighter gray color */
+}
 /* Navigation Bar */
 nav {
     background: #003366;
@@ -16,11 +30,13 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+/*
 nav .logo {
     font-size: 24px;
     font-weight: bold;
     margin-left: 20px;
 }
+*/
 nav ul {
     list-style: none;
     padding: 0;
