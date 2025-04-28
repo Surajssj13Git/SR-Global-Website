@@ -10,16 +10,17 @@ body {
     font-weight: bold;
     line-height: 1.1;
     text-align: left; /* or center */
+    color:#ffffff;
 }
 
 .logo-top {
     font-size: 28px; /* Bigger for top */
-    color: #000; /* Change color if you want */
+
 }
 
 .logo-bottom {
     font-size: 18px; /* Smaller for bottom */
-    color: #555; /* Slightly lighter gray color */
+   
 }
 /* Navigation Bar */
 nav {
