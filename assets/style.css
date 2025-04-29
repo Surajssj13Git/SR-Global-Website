@@ -14,14 +14,14 @@ body {
 }
 
 .logo-top {
-    font-size: 28px; /* Bigger for top */
-    letter-spacing: 2px;
+    font-size: 24px; /* Bigger for top */
+    letter-spacing: -2px;
 
 }
 
 .logo-bottom {
-    font-size: 18px; /* Smaller for bottom */
-    letter-spacing: 3px;
+    font-size: 20px; /* Smaller for bottom */
+    letter-spacing: 2px;
    
 }
 /* Navigation Bar */
