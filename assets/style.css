@@ -21,9 +21,12 @@ body {
 
 .logo-bottom {
     font-size: 20px; /* Smaller for bottom */
-    letter-spacing: 3px;
-    color: #ffcc00;
-   
+    background: #ffcc00;
+    color: black;
+    padding: 5px 8px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
 }
 /* Navigation Bar */
 nav {
