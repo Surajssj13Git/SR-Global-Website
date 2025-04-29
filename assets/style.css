@@ -109,7 +109,6 @@ nav ul li a {
 }
 .service-box h3 {
     margin: 10px 0;
-    margin: 0 auto;
 }
 
 /* Footer */
@@ -122,6 +121,7 @@ footer {
 /* Contact Form Section */
 .form-container{
 max-width: 600px;
+margin: 0 auto;
 }
 .contact-form-section {
     padding: 50px 20px;
