@@ -119,6 +119,9 @@ footer {
     margin-top:50px;
 }
 /* Contact Form Section */
+.form-container{
+max-width: 600px;
+}
 .contact-form-section {
     padding: 50px 20px;
     background: #f1f1f1;
