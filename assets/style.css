@@ -15,11 +15,13 @@ body {
 
 .logo-top {
     font-size: 28px; /* Bigger for top */
+    letter-spacing: 2px;
 
 }
 
 .logo-bottom {
     font-size: 18px; /* Smaller for bottom */
+    letter-spacing: 3px;
    
 }
 /* Navigation Bar */
