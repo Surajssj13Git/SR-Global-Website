@@ -1,13 +1,37 @@
-{% include header.html}
-    <header>
-        <h1>Our Services</h1>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - SRB Global Solutions</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+        // Load header and footer dynamically
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('../header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data);
 
-    <section>
+      fetch('../footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+   });
+    </script>
+</head>
+<body>
+    div id="header"></div>
+
+  <main class="content">
+    <section class="services">
+      <h1>Our Services</h1>
+      <p>At SRB Global Solutions, we offer a wide range of IT services including implementation, customization, and support for Microsoft Dynamics 365 and the Power Platform. Our team can also assist with additional business technology needs tailored to your organization's goals.</p>
         <h2>Business Consulting</h2>
         <p>Helping companies grow with strategic solutions.</p>
         <h2>IT Services</h2>
         <p>Web development, tech support, and security.</p>
     </section>
+  </main>
 
-{% include footer.html}
+  <div id="footer"></div>
+</body>
+</html>
