@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SRB Global Solutions</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script>
+        // Load header and footer dynamically
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('../header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+      fetch('../footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+   });
+    </script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <span class="logo-top">SRB Global</span><br>
-            <span class="logo-bottom">Solutions</span>
-          </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li> 
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-
     <header>
         <h1>Contact Us</h1>
         <p>We’d love to hear from you! Get in touch with us today.</p>
@@ -49,9 +48,7 @@
         <p>Address: Melbourne - Australia</p>
     </section>
 
-    <footer>
-        <p>© 2024 SRB Global Solutions. All rights reserved.</p>
-    </footer>
+    <div id="footer"></div>
 </body>
 <script>
     const SUPABASE_URL = "https://gmiqfwzhoimgvjpphvyn.supabase.co";
