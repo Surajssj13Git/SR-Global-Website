@@ -6,30 +6,27 @@
     <title>SRB Global Solutions</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        // Load header and footer dynamically
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('../header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+      fetch('../footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+   });
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">
-            <span class="logo-top">SRB Global</span><br>
-            <span class="logo-bottom">Solutions</span>
-          </div>
-        <ul>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </ul>
-    </nav>
+    <div id="header"></div>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <main class="hero">
         <h1>Welcome to SRB Global Solutions</h1>
         <p>Your Partner in Solutions & Services</p>
         <a href="services.html" class="cta-button">Explore Our Services</a>
-    </header>
 
     <!-- Services Preview -->
     <section class="services-preview">
@@ -52,10 +49,8 @@
             </div>
         </div>
     </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 SRB Global Solutions. All rights reserved.</p>
-    </footer>
+<div id="footer"></div>
 </body>
 </html>
