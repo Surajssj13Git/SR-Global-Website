@@ -252,9 +252,13 @@ margin: 0 auto;
         color: #333;
         line-height: 1.6;
       }
-      
-      .services-section h1,
       .services-section h2 {
+        text-align: center;
+        color: #ffcc00;
+        margin-bottom: 1.5rem;
+      }
+      
+      .services-section h1 {
         text-align: center;
         color: #222;
         margin-bottom: 1.5rem;
